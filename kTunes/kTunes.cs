@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using System.ComponentModel;
 using WindowsInput;
+using KSP.UI.Screens;
 
 namespace kTunes
 {
@@ -28,7 +29,7 @@ namespace kTunes
 		private static Rect playerWindowRect = new Rect (PlayerWindowXOffset, PlayerWindowYOffset, PlayerWindowWidth, PlayerWindowHeight);
 		private static GUIStyle playerWindowStyle = new GUIStyle(HighLogic.Skin.window);
 
-		private static ApplicationLauncherButton appLauncherButton;
+		private static KSP.UI.Screens.ApplicationLauncherButton appLauncherButton;
 		private static bool isPlayerVisible = false;
 
 		public void Awake ()
